@@ -1,23 +1,21 @@
 let total = 0;
 
-do{
-    
-   let input = prompt('Введи число','');
+do {
+  let input = prompt("Введи число", "");
 
-    if(input == null){
-        break;
-    }
+  if (input == null) {
+    break;
+  }
 
-    input = Number(input);
+  input = Number(input);
 
-    const notANumber = Number.isNaN(input);
+  const notANumber = Number.isNaN(input);
 
-    if(notANumber){
-        continue;
-    }
+  if (notANumber) {
+    continue;
+  }
 
-    total += input;
+  total += input;
+} while (true);
 
-}while(true)
-
-alert(`Общая сумма чисел равна ${total}`)
+alert(`Общая сумма чисел равна ${total}`);
